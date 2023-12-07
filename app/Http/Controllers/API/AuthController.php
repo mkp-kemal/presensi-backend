@@ -51,7 +51,7 @@ class AuthController extends Controller
         return response()
             ->json([
                 'success' => true,
-                'message' => 'Hi '.$user->name.', selamat datang di sistem presensi',
+                'message' => 'Hi '.$user->id.', selamat datang di sistem presensi',
                 'data' => $user
             ]);
     }
